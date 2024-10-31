@@ -9,5 +9,5 @@ pyqt5 5.15.6<br>
 pytorch 1.11.0
 
 ## Project Description
-After configuring the environment as mentioned above, you need to extract onnxruntime.zip into the downloaded Machine_Vision_and_Mask-RCNN_application folder to ensure that the program can accurately locate the Mask R-CNN ONNX inference model during execution. For specific program execution processes and results, please refer to the readme file in the Machine_Vision_and_Mask-RCNN_application folder.
+After setting up the environment as described above, you need to unzip onnxruntime.zip into the downloaded Machine_Vision_and_Mask-RCNN_application folder for invocation. This ensures that the program can accurately locate the ONNX inference model of Mask R-CNN during execution and prevents Qt from encountering errors due to missing ONNX runtime files. For detailed program execution processes and results, please refer to the README file in the Machine_Vision_and_Mask-RCNN_application folder.<br>
 Please modify the various paths involved in the program code according to your actual situation as needed.
