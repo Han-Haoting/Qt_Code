@@ -30,9 +30,6 @@ Using Mask R-CNN to detect the injection port of the UTVC, and based on the dete
   │  │  │  └── Binarization.h
   │  │  │  └── Extract_Region.cpp
   │  │  │  └── Extract_Region.h
-  │  │  ├──Injection port detection module 
-  │  │  │  ├── Injection_Port_Detection.cpp
-  │  │  │  └── Injection_Port_Detection.h
   │  ├── Image processing and information extraction module for injection port mask images
   │  │  ├── Image filling module
   │  │  │  ├── Cover_Image_Full.cpp
@@ -55,3 +52,11 @@ Using Mask R-CNN to detect the injection port of the UTVC, and based on the dete
   │  └── mainwindow.h
   │  └── mainwindow.ui
 ```
+## Program execution process
+Loading the UTVC image using the load_image function, and then import the UTVC image into the packaged Mask R-CNN for injection port feature detection. Next, use an image filling algorithm to eliminate holes in the injection port mask image, and finally apply the minimum bounding rectangle algorithm to solve the geometric information of the injection port mask image (positioning point and orientation angle).
+
+Extracting the cover plate area from the UTVC image, and use image processing algorithms to remove isolated pixels and hole areas in the cover plate region image. Then, apply the minimum bounding rectangle algorithm to solve for the positioning point and orientation angle of the cover plate area.
+
+Using the obtained injection port positioning point and cover plate area positioning point, construct a direction vector and calculate the angle of the direction vector as the orientation angle of the UTVC image. This improves the problem of directionality in solving the image rotation angle for the minimum bounding rectangle.
+## Program execution result
+
