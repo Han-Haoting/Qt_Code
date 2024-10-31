@@ -59,3 +59,4 @@ Extracting the cover plate area from the UTVC image, and use image processing al
 
 Using the obtained injection port positioning point and cover plate area positioning point, construct a direction vector and calculate the angle of the direction vector as the orientation angle of the UTVC image. This improves the problem of directionality in solving the image rotation angle for the minimum bounding rectangle.
 ## Program execution result
+![image](https://github.com/Han-Haoting/Qt_Code/blob/master/Machine_Vision_and_Mask-RCNN_application/Result.jpg)
