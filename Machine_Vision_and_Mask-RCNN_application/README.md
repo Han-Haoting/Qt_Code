@@ -1,9 +1,9 @@
 # Qt_Code (C++)
 ## Program description
 Using Mask R-CNN to detect the injection port of the UTVC, and based on the detection results, applying image processing algorithms to locate the UTVC. Additionally, improving traditional visual algorithms with Mask R-CNN to correct the orientation of UTVC images.
-## Program functional modules
+## Program Tree
   ```
-  Graduate Program Tree (Graduate_Program.pro + Graduate_Program.pro.user)
+  Graduate_Program.pro + Graduate_Program.pro.user
   ├── Image loading program
   │  ├── Load_Image.cpp
   │  └── Load_Image.h
